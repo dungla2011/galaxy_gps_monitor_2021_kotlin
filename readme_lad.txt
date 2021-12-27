@@ -5,3 +5,4 @@ https://github.com/mmaterowski/endless-service
 - LADTEST run ok on Galaxy s10e
 - Add: Send log GPS to remote server ok
 - Chạy cả khi khởi động lại ok
+
