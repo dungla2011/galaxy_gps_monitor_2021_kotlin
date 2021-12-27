@@ -167,28 +167,18 @@ class EndlessService : Service(), LocationListener {
             //                                          int[] grantResults)
             // to handle the case where the user grants the permission. See the documentation
             // for ActivityCompat#requestPermissions for more details.
+
+//            Toast.makeText(MainActivity, "Its toast!", Toast.LENGTH_SHORT).show()
+
             return
         }
 
 
-//        val df = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.mmmZ")
-//        val gmtTime = df.format(Date())
-
         val deviceId = Settings.Secure.getString(applicationContext.contentResolver, Settings.Secure.ANDROID_ID)
 
-//        val json =
-//            """
-//                {
-//                    "deviceId": "$deviceId",
-//                    "createdAt": "$gmtTime"
-//                }
-//            """
+
         try {
             var locationOk = getLastKnownLocation(this);
-//            "https://galaxycloud.vn/train/firebase/send-firebase-to-app-background-android-ok1.php?send_long_lat=test002".httpGet().response {
-//                    request, response, result ->
-//                //response handling
-//            }
             val deviceName = Build.MODEL // returns model name
 
             var long1 = locationOk?.longitude;
@@ -196,7 +186,9 @@ class EndlessService : Service(), LocationListener {
 
             log("[location send get response bytes] $deviceName#$long1#$lat1")
 
-            Fuel.get("https://galaxycloud.vn/tool/gps/info.php?send_info=device_send_$deviceName:$deviceId,lat-long:$lat1,$long1")
+            var urlServer = "https://galaxycloud.vn/tool/gps/info.php?send_info=device_send_$deviceName:$deviceId,lat-long:$lat1,$long1";
+
+            Fuel.get(urlServer)
                 .response { _, _, result ->
                     val (bytes, error) = result
                     if (bytes != null) {
