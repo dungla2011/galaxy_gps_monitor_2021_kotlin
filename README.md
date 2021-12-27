@@ -5,12 +5,13 @@ Rảnh làm cái App chơi, mục đích theo dõi Bồ. Tình hình là có 1 e
 
 ![theo dõi bồ](https://cdn-glx-7.galaxycloud.vn/tool/media/static.lib?sid=100&db68=1&type=mg&id=pp182424&media=image)
 
+- Dành cho: các coder android
+
 - Sử dụng để
   + Log vị trí GPS của máy android (check vị trí của Bồ, hoặc nghiêm túc hơn thì theo dõi vị trí của con cái đảm bảo an toàn...)
   + Phiên bản android hỗ trợ: >=5.0, đã test ok với Galaxy S10e
-  + Gửi lên 1 server URL để xem log tại server
+  + Gửi vị trí GPS lên 1 server, qua URL sau đó có thể xem log GPS tại server, Có thể thay URL Server của bạn vào App (hàm pingFakeServer), đang để 3 phút gửi 1 lần, có thể đặt lại tham số này 
   + Cần cấp quyền GPS cho App, và bỏ Optimize Battery của riêng App, để background chạy không bị chặn
-  + Có thể thay URL Server của bạn vào App (hàm pingFakeServer), vì hiện tại là gửi lên server của tôi, 3 phút gửi 1 lần, có thể đặt lại tham số này
   + Đã build ok với Android studio 4.2
   
 - Code tham khảo rất đơn giản:
