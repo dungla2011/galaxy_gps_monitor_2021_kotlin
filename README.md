@@ -3,7 +3,7 @@ Rảnh làm cái App chơi, mục đích theo dõi Bồ. Tình hình là có 1 e
  Hôm trước 20.10 đã tặng cái máy Samsung S20 làm quà rồi, nên ko thể cho đi linh tinh được :))
  Phần mềm online thì đầy ra, nhưng ko như ý, lại bắt trả tiền tốn kém, thì sao lại ko làm cái app khi biết code nhỉ haha 
 
-![theo dõi bồ](https://cdn-glx-6.galaxycloud.vn/tool/media/static.lib?sid=100&db68=1&type=mg&id=xr664382&media=image)
+![theo dõi bồ](https://cdn-glx-7.galaxycloud.vn/tool/media/static.lib?sid=100&db68=1&type=mg&id=pp182424&media=image)
 
 - Sử dụng để
   + Log vị trí GPS của máy android (check vị trí của Bồ, hoặc nghiêm túc hơn thì theo dõi vị trí của con cái đảm bảo an toàn...)
