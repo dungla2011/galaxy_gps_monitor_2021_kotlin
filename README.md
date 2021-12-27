@@ -1,5 +1,5 @@
 # Galaxy Monitor GpS, Kotlin
-Rảnh làm cái App chơi
+Rảnh làm cái App chơi, mục đích theo dõi Bồ
 
 ![theo dõi bồ](https://cdn-glx-6.galaxycloud.vn/tool/media/static.lib?sid=100&db68=1&type=mg&id=xr664382&media=image)
 
