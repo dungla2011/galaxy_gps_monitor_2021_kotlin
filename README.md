@@ -3,7 +3,7 @@ Rảnh làm cái App chơi
 
 - Sử dụng để
   + Log vị trí GPS của máy android (check vị trí của Bồ vì có gì đó khả nghi, hoặc theo dõi vị trí của con cái đảm bảo an toàn...)
-Mục đích riêng của tôi là check Bồ thôi, có lúc em ý nói ở chỗ này nhưng mình biết đang ở chỗ khác mà chưa dò ra được, nghi ngờ ko biết đang làm gì chưa bắt được quả tang :))
+  + Mục đích riêng của tôi là check Bồ thôi, có lúc bồ nói ở chỗ này nhưng mình biết đang ở chỗ khác mà chưa dò ra được, nghi ngờ ko biết đang làm gì chưa bắt được quả tang :))
 
   + Phiên bản android hỗ trợ: >=5.0, đã test ok với Galaxy S10e
   + Gửi lên 1 server URL để xem log tại server
