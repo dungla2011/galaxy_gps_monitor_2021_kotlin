@@ -25,7 +25,8 @@ https://stackoverflow.com/a/60927918/16621499
 - Đã test chạy tốt trên Galaxy s10e (Android 11), Galaxy S6 (Android 5)
 - Add: Send log GPS to remote server ok
 - Chạy cả khi khởi động lại 
-(Khi khởi động lại, cần mở màn hình lên để Boot done, từ đó mới active service background, galaxy s10e mất 5 phút là Boot xong, sau đó tắt màn hình thì service vẫn chạy ngầm)
+  + Khi khởi động lại, Galaxy S6 (Android 5) có thể chạy service ngay mà không cần mở màn hình
+  + Với Galaxy S10, cần mở màn hình lên để Boot Done, từ đó mới active service background, mất 5 phút là Boot xong, sau đó tắt màn hình thì service vẫn chạy ngầm
 
 28.12.21
 Đổi icon, name thành Email Service, faked name :)
