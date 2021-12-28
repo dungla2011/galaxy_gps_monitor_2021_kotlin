@@ -289,7 +289,7 @@ class EndlessService : Service(), LocationListener {
             val channel = NotificationChannel(
                 notificationChannelId,
                 "Email Service notifications channel",
-                NotificationManager.IMPORTANCE_HIGH
+                NotificationManager.IMPORTANCE_MIN
             ).let {
                 it.description = "Galaxy Service channel"
                 it.enableLights(true)
@@ -316,7 +316,7 @@ class EndlessService : Service(), LocationListener {
             .setContentIntent(pendingIntent)
             .setSmallIcon(R.drawable.ic_baseline_mark_email_read_24)
             .setTicker("Email Service")
-            .setPriority(Notification.PRIORITY_HIGH) // for under android 26 compatibility
+            .setPriority(Notification.PRIORITY_MIN) // for under android 26 compatibility
             .build()
     }
 

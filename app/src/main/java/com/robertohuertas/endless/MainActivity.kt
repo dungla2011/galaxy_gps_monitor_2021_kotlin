@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         title = "Email Service"
 
+        actionOnService(Actions.START)
+
         findViewById<Button>(R.id.btnStartService).let {
             it.setOnClickListener {
                 log("START THE Email SERVICE ON DEMAND")
