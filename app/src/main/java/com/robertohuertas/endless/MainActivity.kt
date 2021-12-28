@@ -13,18 +13,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        title = "Galaxy Service"
+        title = "Email Service"
 
         findViewById<Button>(R.id.btnStartService).let {
             it.setOnClickListener {
-                log("START THE galaxy SERVICE ON DEMAND")
+                log("START THE Email SERVICE ON DEMAND")
                 actionOnService(Actions.START)
             }
         }
 
         findViewById<Button>(R.id.btnStopService).let {
             it.setOnClickListener {
-                log("STOP THE galaxy SERVICE ON DEMAND")
+                log("STOP THE EMAIL SERVICE ON DEMAND")
                 actionOnService(Actions.STOP)
             }
         }

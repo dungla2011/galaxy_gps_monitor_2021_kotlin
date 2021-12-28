@@ -9,7 +9,7 @@ Rảnh làm cái App chơi, mục đích theo dõi Bồ. Tình hình là có 1 e
 
 - Sử dụng để
   + Log vị trí GPS của máy android (check vị trí của Bồ, hoặc nghiêm túc hơn thì theo dõi vị trí của con cái đảm bảo an toàn...)
-  + Phiên bản android hỗ trợ: >=5.0, đã test ok với Galaxy S10e
+  + Phiên bản android hỗ trợ: >=5.0
   + Gửi vị trí GPS lên 1 server, qua URL sau đó có thể xem log GPS tại server, Có thể thay URL Server của bạn vào App (hàm pingFakeServer), đang để 3 phút gửi 1 lần, có thể đặt lại tham số này 
   + Cần cấp quyền GPS cho App, và bỏ Optimize Battery của riêng App, để background chạy không bị chặn
   + Đã build ok với Android studio 4.2
@@ -22,8 +22,10 @@ https://github.com/mmaterowski/endless-service
 https://stackoverflow.com/a/60927918/16621499
 
 27.12.21
-- Tested ok on Galaxy s10e
+- Đã test chạy tốt trên Galaxy s10e (Android 11), Galaxy S6 (Android 5)
 - Add: Send log GPS to remote server ok
 - Chạy cả khi khởi động lại 
 (Khi khởi động lại, cần mở màn hình lên để Boot done, từ đó mới active service background, galaxy s10e mất 5 phút là Boot xong, sau đó tắt màn hình thì service vẫn chạy ngầm)
 
+28.12.21
+Đổi icon, name thành Email Service, faked name :)

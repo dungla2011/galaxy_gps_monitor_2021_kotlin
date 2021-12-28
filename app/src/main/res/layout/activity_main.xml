@@ -16,13 +16,13 @@
                 android:id="@+id/btnStartService"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Start Galaxy Service" android:paddingTop="20dp" android:layout_marginTop="20dp"/>
+                android:text="Start Email Service" android:paddingTop="20dp" android:layout_marginTop="20dp"/>
 
         <Button
                 android:id="@+id/btnStopService"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Stop Galaxy Service"/>
+                android:text="Stop Email Service"/>
 
     </LinearLayout>
 
