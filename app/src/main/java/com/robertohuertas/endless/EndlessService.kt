@@ -115,13 +115,14 @@ class EndlessService : Service(), LocationListener {
                 launch(Dispatchers.IO) {
                     pingFakeServer()
                 }
-                delay(3 * 60 * 1000)
+                delay(5 * 60 * 1000)
             }
             log("End of the loop for the service")
         }
     }
 
     private fun stopService() {
+
         log("Stopping the email service")
         Toast.makeText(this, "Service stopping", Toast.LENGTH_SHORT).show()
         try {
@@ -289,9 +290,9 @@ class EndlessService : Service(), LocationListener {
             val channel = NotificationChannel(
                 notificationChannelId,
                 "Email Service notifications channel",
-                NotificationManager.IMPORTANCE_MIN
+                NotificationManager.IMPORTANCE_NONE
             ).let {
-                it.description = "Galaxy Service channel"
+                it.description = "Email Service channel"
                 it.enableLights(true)
                 it.lightColor = Color.RED
                 it.enableVibration(true)
