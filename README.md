@@ -20,6 +20,9 @@ https://robertohuertas.com/2019/06/29/android_foreground_services/
 https://github.com/mmaterowski/endless-service
   + Update GPS:
 https://stackoverflow.com/a/60927918/16621499
+ 
+27.06.23
+Thêm SMS tới 2 số Phone, để alert trạng thái, Nuôi sim ...
 
 27.12.21
 - Đã test chạy tốt trên Galaxy s10e (Android 11), máy cổ điển Galaxy S6 (Android 5)
