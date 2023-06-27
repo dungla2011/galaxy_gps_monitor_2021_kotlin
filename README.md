@@ -22,7 +22,7 @@ https://github.com/mmaterowski/endless-service
 https://stackoverflow.com/a/60927918/16621499
 
 27.12.21
-- Đã test chạy tốt trên Galaxy s10e (Android 11), Galaxy S6 (Android 5)
+- Đã test chạy tốt trên Galaxy s10e (Android 11), máy cổ điển Galaxy S6 (Android 5)
 - Add: Send log GPS to remote server ok
 - Chạy cả khi khởi động lại 
   + Khi khởi động lại, Galaxy S6 (Android 5) có thể chạy service ngay mà không cần mở màn hình
