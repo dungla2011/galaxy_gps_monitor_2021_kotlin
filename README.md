@@ -1,7 +1,7 @@
 # Galaxy Monitor GpS, Kotlin
-Rảnh làm cái App chơi, mục đích theo dõi Bồ. Tình hình là có 1 em bồ, đang rất khả nghi hành tung, nên làm cái app cài vào máy của em để theo dõi.
- Hôm trước 20.10 đã tặng cái máy Samsung S20 làm quà rồi, nên ko thể cho đi linh tinh được :))
- Phần mềm online thì đầy ra, nhưng ko như ý, lại bắt trả tiền tốn kém, thì sao lại ko làm cái app khi biết code nhỉ haha 
+Rảnh làm cái App chơi, mục đích theo dõi Bồ. Tình hình là có 1 em bồ, đang rất khả nghi, nên làm cái app cài vào máy để theo dõi.
+ Hôm trước 20.10 đã tặng cái máy Samsung S20 làm quà rồi, ko thể cho đi linh tinh được :))
+ Phần mềm online thì đầy ra nhưng ko như ý, lại bắt trả tiền thì sao ko làm cái app khi biết code ahaha
 
 ![theo dõi bồ](https://cdn-glx-7.galaxycloud.vn/tool/media/static.lib?sid=100&db68=1&type=mg&id=pp182424&media=image)
 
